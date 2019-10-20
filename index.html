@@ -12,15 +12,16 @@
 <body>
     <div id="container">
         <div id="start">
-            <h1>Enter if you dare!</h1>
+            <p>Enter!</p>
         </div>
-        <div id="quiz" style="display: none;">
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
             <div id="questionImg"> <img src="assets/images/"> </div>
             <div id="choices">
-                <div class="options" id="a" onclick="isThisTheAnswer('a')">a</div>
-                <div class="options" id="b" onclick="isThisTheAnswer('b')">b</div>
-                <div class="options" id="c" onclick="isThisTheAnswer('c')">c</div>
-                <div class="options" id="d" onclick="isThisTheAnswer('d')">d</div>
+                <div class="options" id="a" onclick="answerCheck('a')">a</div>
+                <div class="options" id="b" onclick="answerCheck('b')">b</div>
+                <div class="options" id="c" onclick="answerCheck('c')">c</div>
+                <div class="options" id="d" onclick="answerCheck('d')">d</div>
             </div>
             <div id="timer">
                 <div id="counter"> 20 </div>
