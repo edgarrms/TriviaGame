@@ -10,29 +10,34 @@
 </head>
 
 <body>
-    <div id="start">
-        <h1>Enter if you dare!</h1>
-    </div>
-    <div id="quiz" style="display: none;">
-        <div id="questionImg"> <img src="assets/images/"> </div>
-        <div id="timer">
-            <div id="counter"> 20 </div>
-            <div id="backgroundTimeGauge"></div>
-            <div id="timeGauge"></div>
+    <div id="container">
+        <div id="start">
+            <h1>Enter if you dare!</h1>
+        </div>
+        <div id="quiz" style="display: none;">
+            <div id="questionImg"> <img src="assets/images/"> </div>
+            <div id="choices">
+                <div class="options" id="a" onclick="isThisTheAnswer('a')">a</div>
+                <div class="options" id="b" onclick="isThisTheAnswer('b')">b</div>
+                <div class="options" id="c" onclick="isThisTheAnswer('c')">c</div>
+                <div class="options" id="d" onclick="isThisTheAnswer('d')">d</div>
+            </div>
+            <div id="timer">
+                <div id="counter"> 20 </div>
+                <div id="backgroundTimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+
+
+        </div>
+
+        <div id="scoreContainer" style="display : none;">
+            <img src="assets/images/monkey.jpeg">
+            <h1>percentage of score</h1>
         </div>
 
 
-
-
     </div>
-
-    <div id="scoreContainer">
-        <img src="assets/images/">
-        <h1>percentage of score</h1>
-    </div>
-
-
-
     <script src="assets/javascript/app.js"></script>
 </body>
 
